@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Exam css.css" rel="stylesheet">
+    <title>Map of educational resources</title>
+    <style>
+        #map {
+            height: 500px; /* Высота карты */
+            width: 100%; /* Ширина карты */
+        }
+        .filter-container {
+            margin-bottom: 20px;
+        }
+    </style>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="bg-primary text-white p-4">
+        <div class="container">
+            <h1>Map of educational resources</h1>
+        </div>
+    </header>
+
+    <div class="container my-4">
+        <div class="filter-container">
+            <input type="text" id="searchBox" class="form-control" placeholder="Поиск ресурсов...">
+            <button class="btn btn-primary mt-2" onclick="searchResources()">Поиск</button>
+        </div>
+        <div id="map"></div>
+    </div>
+
+    <footer class="bg-primary text-white text-center p-4 mt-5">
+        <p>Контактная информация: info@languageschool.ru | Телефон: +7 (499) 456-78-90</p>
+    </footer>
+
+    <script src="exam map script.js"></script> 
+</body>
+</html>

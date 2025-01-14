@@ -1,0 +1,75 @@
+/* Основные стили для тела страницы */
+body {
+    font-family: 'Muli', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Шапка сайта */
+header {
+    background-color: #008000; /* Цвет шапки */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Заголовок в шапке */
+header h1 {
+    color: white;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Стили для контейнера */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Стили для кнопок */
+.btn {
+    background-color: #28a745; /* Цвет кнопок */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #218838; /* Цвет кнопки при наведении */
+}
+
+/* Стили для формы поиска */
+.filter-container {
+    margin-bottom: 20px;
+}
+
+/* Поля ввода */
+input[type="text"], select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 22px); /* Учитываем паддинг и границу */
+    margin-bottom: 10px;
+}
+
+/* Стили для таблицы */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #007bff; /* Цвет заголовков таблицы */
+    color: white;
+}
